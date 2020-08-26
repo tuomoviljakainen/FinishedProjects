@@ -1,0 +1,525 @@
+body{
+    margin:0;
+}
+
+#main {
+    height: 100%;
+    min-height: 1500px;
+    width: 1200px;
+    border-right: 4px solid #e3e3e3;
+    border-left: 4px solid #e3e3e3;
+    margin: auto;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+}
+
+.header {
+    margin-top: 0;
+    text-align: center;
+    color: orange;
+    /*font-family: 'Roboto Mono', monospace;*/
+    font-family: 'Press Start 2P', cursive;
+    font-size: 80px;
+    padding: 50px 0 15px 0;
+}
+
+/* https://codepen.io/anon/pen/VovqoE */
+
+#rain {
+    display: block;
+    z-index: 1;
+    position: absolute;
+}
+
+.pages {
+    border-bottom: 1.5px solid #e3e3e3;
+    border-top: 1.5px solid #e3e3e3;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+
+.page-name {
+    font-size: 30px;
+    padding: 15px;
+    font-family: 'Questrial', sans-serif;
+    color: orange;
+    text-decoration:none;
+    
+    -webkit-transition: color 0.2s ease-out;
+     -moz-transition: color 0.2s ease-out;
+     -o-transition: color 0.2s ease-out;
+     -ms-transition: color 0.2s ease-out;
+     transition: color 0.2s ease-out;
+}
+
+.page-name:hover {
+    color: #ffda75;
+}
+
+.page-bar {
+    font-size: 30px;
+    color: #e3e3e3;
+}
+
+.news-box {
+    border-bottom: 1.5px solid #e3e3e3;
+    padding: 10px;
+    padding-bottom: 20px;
+    font-family: 'Questrial', sans-serif;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.news-title {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-top: 10px;
+    display: block;
+	font-size: 20px;
+}
+
+.news-text {
+    font-family: 'Questrial', sans-serif;
+}
+
+.news-thumbnail {
+    height: 130px;
+    max-width: 100%;
+    max-height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.search-box {
+    border-bottom: 1.5px solid #e3e3e3;
+    height: 155px;
+    font-family: 'Questrial', sans-serif;
+    display: block;
+}
+
+.search-box div {
+    display: block;
+    margin: auto 35% auto 35%;
+    text-align: center;
+}
+
+.search-box div input{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.search-box div select {
+    display: block;
+}
+
+.search-box-header {
+    text-align: center;
+}
+
+.search-box-button {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.search-tag {
+    border-radius: 25px;
+    padding-left: 4px;
+    padding-right: 4px;
+	margin-bottom: 0.5em;
+    display: inline;
+    background-color: aquamarine;
+    margin-right: 15px;
+    cursor: pointer;
+	word-break: break-word;
+}
+
+/*--------------------INTEL---------------------*/
+
+
+.intel-page {
+	position: relative;
+	background-color: white;
+}
+
+.intel-box {
+    border-bottom: 1.5px solid #e3e3e3;
+    height: 155px;
+    font-family: 'Questrial', sans-serif;
+    display: block;
+}
+
+.intel-search-box {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.intel-search-checkbox {
+    text-align: center;
+    display: inline-block;
+    margin: auto auto auto 10px;
+}
+
+.intel-search-header {
+    text-align: center;
+}
+
+.intel-search-form {
+    text-align: center;
+}
+
+/* VIRUSTOTAL */
+
+.virustotal-box {
+    float:left;
+    font-family: 'Questrial', sans-serif;
+    width: 49%;
+    margin-left: 1%;
+    border-right: 1px solid #e3e3e3;
+}
+
+.virustotal-details {
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.virustotal-details h2 {
+    text-align: center;
+}
+.virustotal-details-block {
+    width: 100%;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    display: inline-block;
+    word-break: break-word;
+}
+
+.virustotal-details-header {
+    float:left;
+	margin-left: 5%;
+    width: 25%;
+}
+
+.virustotal-details-value {
+    float: right;
+    width: 70%;
+}
+
+
+.virustotal-result {
+    width: 100%;
+    display: inline-block;
+    border-top: 1px solid #e3e3e3;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/*
+.virustotal-result {
+	max-height: 30em;
+	overflow: auto;
+	background-color: white;
+	border: 3px solid #e3e3e3;
+}*/
+
+.virustotal-avvendor {
+    float:left;
+    width: 40%;
+}
+
+.virustotal-hit {
+    color: red;
+    float: right;
+    width: 60%;
+}
+
+.virustotal-clean {
+    color: green;
+    float: right;
+    width: 60%;
+}
+
+.virustotal-whois-box {
+	background-color: #e3e3e3;
+	max-height: 25em;
+	overflow: auto;
+	white-space: pre-line;
+}
+
+.virustotal-resolutions-box {
+	max-height: 30em;
+	overflow: auto;
+	background-color: white;
+	border: 3px solid #e3e3e3;
+}
+
+.virustotal-resolutions-box-header {
+	background-color: skyblue;
+	text-align: center;
+	height: 1.5em;
+	padding-top: 0.5em;
+	font-size: 1.5em;
+}
+
+.virustotal-resolutions-hostname {
+	float: left;
+	width: 59.5%;
+	word-break: break-word;
+	padding-right: 0.5%;
+}
+
+.virustotal-resolutions-resolved {
+	float: right;
+	width: 40%;
+}
+
+.virustotal-databox {
+	border: 3px solid #e3e3e3;
+	width: 90%;
+	margin: 0 5% 3em 5%;	
+}
+
+/* URLSCAN */
+
+.urlscan-box {
+    float:right;
+    font-family: 'Questrial', sans-serif;
+    width: 49.5%;
+}
+
+.urlscan-details {
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.urlscan-details h2 {
+    text-align: center;
+}
+
+.urlscan-details-block {
+    width: 100%;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    display: inline-block;
+    word-break: break-word;
+}
+
+.urlscan-details-header {
+    float:left;
+	margin-left: 5%;
+    width: 25%;
+}
+
+.urlscan-details-value {
+    float: right;
+    width: 70%;
+}
+
+.urlscan-details-block-thumbnail {
+	width: 89%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.urlscan-details-loading-thumbnail {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.urlscan-details-error {
+	text-align: center;
+}
+
+/* ABUSEIPDB */
+
+.abuseipdb-box {
+    float:right;
+    font-family: 'Questrial', sans-serif;
+    width: 49.5%;
+}
+
+.abuseipdb-details {
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.abuseipdb-details h2 {
+    text-align: center;
+}
+
+.abuseipdb-details-block {
+    width: 100%;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    display: inline-block;
+    word-break: break-word;
+}
+
+.abuseipdb-details-header {
+    float:left;
+	margin-left: 5%;
+    width: 40%;
+}
+
+.abuseipdb-details-value {
+    float: right;
+    width: 55%;
+}
+
+.abuseipdb-report-box {
+	background-color: #e3e3e3;
+	max-height: 25em;
+}
+
+.abuseipdb-report-box-header {
+	background-color: skyblue;
+	text-align: center;
+	height: 1.5em;
+	padding-top: 0.5em;
+	font-size: 1.5em;
+}
+
+.abuseipdb-resolutions-box {
+	max-height: 30em;
+	overflow: auto;
+	background-color: white;
+	border: 3px solid #e3e3e3;
+}
+
+.abuseipdb-report-created {
+	float: left;
+	width: 45%;
+	word-break: break-word;
+	padding-right: 0.5%;
+}
+
+.abuseipdb-report-comment {
+	float: right;
+	width: 54.5%;
+	word-break: break-word;
+}
+
+/* INTEL UNKNOWN DATA */
+
+.intel-unknown-data {
+	font-family: 'Questrial', sans-serif;
+}
+
+/* INTEL ERROR */
+
+.intel-error-message {
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+}
+
+/************KOOT ERI RESOLUUTIOILLE*************/
+
+/*********************LEVEYS*********************/
+
+@media screen and (max-width: 1500px) {
+	
+	#main {
+		height: 100%;
+		width: 100%;
+	}
+	
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .intel-search-form {
+        font-size: 30px;
+    }
+    
+    .page-name, .page-bar {
+		font-size: 4em;
+	}
+    
+    .search-box-header {
+        font-size: 3em;
+    }
+    
+    .search-box-button {
+		font-size: 35px;
+		width: 12em;
+	}
+    
+    .search-box {
+		padding-bottom: 8em;
+	}
+	
+	.search-box div {
+		margin: auto 20% auto 20%;
+	}
+	
+	.search-box div input {
+		font-size: 35px;
+	}
+	
+	.search-box div select {
+		font-size: 35px;
+	}
+    
+    .intel-box {
+		padding-bottom: 11em;
+	}
+	
+	.intel-search-checkbox {
+		transform: scale(2);
+		 margin-right: 15px;
+	}
+    
+    .intel-search-box {
+		font-size: 30px;
+        width: 20em;
+	}
+	
+    .intel-error-message h3 {
+        font-size: 50px;
+    }
+    
+    .intel-error-message p {
+        font-size: 35px;
+    }
+    
+	.virustotal-box {
+		border-right: none;
+		width: 99.5%;		
+	}
+	
+	.urlscan-box {
+		width: 99.5%;
+		padding-bottom: 2.5em;
+		border-bottom: 2px solid #e3e3e3;
+	}
+	
+	.abuseipdb-box {
+		width: 99.5%;
+		padding-bottom: 2.5em;
+		border-bottom: 2px solid #e3e3e3;
+	}
+	
+	#main {
+		border-left: none;
+		border-right: none;
+	}
+	
+}
+
+@media screen and (max-width: 893px) {
+	
+	.header {
+		font-size: 50px;
+	}
+	
+}
