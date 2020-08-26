@@ -1,0 +1,65 @@
+********SUPASECRET-PROTOCOL***********
+
+The protocol is used to manage a client-server type group chat solution. The server holds user information, and distributes the messages sent towards it to other client's that are connected.
+
+The default port for the protocol is 1337. The messaging in the protocol is encrypted by TLS v1.3 and a public key infrastructure, and the protocol uses TCP for its communication.
+
+
+## Message structure
+
+In the SUPASECRET-protocol there is a strict message structure/syntax that is used for both requests and responses sent by the client and server.
+
+The first part of the message contains the method of the request/reponse. Methods are used to trigger functionality in both client and server, and they are used to tell what the message is attempting to accomplish
+
+The latter parts of the message contain the arguments. Each method has a different amount of arguments. The message parts are separated by a "."-symbol.
+
+Example message:
+
+LOG.ARGUMENT1.ARGUMENT2\r\n\r\n
+
+
+## Request methods
+
+REG is a request method used to initialize the registering process on the server side.
+
+Example request:
+REG.username.password.publickey\r\n\r\n\
+
+LOG is a request method used to login to the server. 
+
+Example request:
+LOG.username.password\r\n\r\n\
+
+MSG is a request method used to post desired message to the server.
+
+Example request:
+MSG.cookie.Hello world!\r\n\r\n\
+
+
+## Response methods
+
+ERR is a response method that is initialized when something goes wrong in the server side. It is used to inform the user of possible errors in the system, specifying the problem at hand.
+
+Example response:
+ERR.301\r\n\r\n\
+
+Error codes:
+20x - Register errors
+201 = User already exists
+202 = Invalid password
+
+30x - Login errors
+301 = Invalid username
+302 = Invalid password
+303 = User already logged in
+
+OK is a response method that is initialized when the client's request is handled correctly. It is used to inform the client that their request was handled
+
+Example response:
+OK.301\r\n\r\n\
+
+OK codes:
+101 = Succesfull user registration
+102 = Succesfull login
+103 = User entered the server
+104 = Message succesfully sent
