@@ -1,2 +1,1 @@
-# TTKS0600 Encryption Techniques Research
-
+# Encryption Techniques Research
